@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shop | Veloura Perfumes</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/products.js"></script>
+<script src="js/cart.js" defer></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<nav class="navbar container">
+
+
+<a href="index.html" class="logo">
+Veloura
+</a>
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+<div class="nav-icons">
+
+<a href="search.html">
+<i class="fa-solid fa-magnifying-glass"></i>
+</a>
+
+<a href="wishlist.html">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+</div>
+
+
+</nav>
+
+</header>
+
+
+
+
+<!-- SHOP HERO -->
+
+
+<section class="promo-banner shop-banner">
+
+<div class="container">
+
+<h2>
+Find Your Signature Scent
+</h2>
+
+<p>
+Luxury fragrances crafted for every personality.
+</p>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-header">
+
+<span>
+Shop Collection
+</span>
+
+
+<h2>
+Premium Perfumes
+</h2>
+
+
+</div>
+
+
+
+
+
+<!-- FILTER -->
+
+<div class="shop-filter">
+
+
+<div class="search-area">
+
+<i class="fa fa-search"></i>
+
+<input type="text" placeholder="Search perfume...">
+
+</div>
+
+
+
+<select onchange="categoryPage(this.value)">
+
+<option value="">
+Category
+</option>
+
+<option value="men.html">
+Men
+</option>
+
+<option value="women.html">
+Women
+</option>
+
+<option value="unisex.html">
+Unisex
+</option>
+
+<option value="luxury.html">
+Luxury
+</option>
+
+
+</select> 
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PRODUCTS -->
+
+
+<div class="product-grid">
+
+
+
+<div class="product-card">
+
+
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=600">
+
+<button onclick="addWishlist(1)" class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+<div class="product-info">
+
+
+<div class="rating">
+★★★★★
+</div>
+
+
+<h3>
+Midnight Oud
+</h3>
+
+<a href="product.html" class="btn btn-primary">
+View Details
+</a>
+
+
+
+
+<p>
+Men Luxury Perfume
+</p>
+
+
+<span>
+$129
+</span>
+
+
+<button onclick="addToCart(1)" class="btn btn-primary">
+Add Cart
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=600">
+
+<button onclick="addWishlist(2)" class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<div class="product-info">
+
+
+<div class="rating">
+★★★★★
+</div>
+
+
+<h3>
+Rose Elegance
+</h3>
+
+<a href="product.html" class="btn btn-primary">
+View Details
+</a>
+
+
+
+<p>
+Women Collection
+</p>
+
+
+<span>
+$149
+</span>
+
+
+<button onclick="addToCart(2)" class="btn btn-primary">
+Add Cart
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=600">
+
+<button onclick="addWishlist(3)" class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<div class="product-info">
+
+
+<div class="rating">
+★★★★★
+</div>
+
+
+<h3>
+Royal Amber
+</h3>
+
+<a href="product.html" class="btn btn-primary">
+View Details
+</a>
+
+
+<p>
+Premium Collection
+</p>
+
+
+<span>
+$189
+</span>
+
+
+<button onclick="addToCart(3)" class="btn btn-primary">
+Add Cart
+</button>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=600">
+
+<button onclick="addWishlist(4)" class="wishlist-btn">
+<i class="fa-solid fa-heart"></i>
+</button>
+
+
+<div class="product-info">
+
+
+<div class="rating">
+★★★★★
+</div>
+
+
+<h3>
+Golden Essence
+</h3>
+
+
+<a href="product.html" class="btn btn-primary">
+View Details
+</a>
+
+
+<p>
+Luxury Collection
+</p>
+
+
+<span>
+$179
+</span>
+
+
+<button onclick="addToCart(4)" class="btn btn-primary">
+Add Cart
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- SAME FOOTER AS HOME -->
+
+
+<footer class="luxury-footer">
+
+
+<div class="container footer-container">
+
+
+<div class="footer-brand">
+
+<h2>
+Veloura
+</h2>
+
+<p>
+Luxury fragrances created for those who believe
+every scent tells a story.
+</p>
+
+
+<div class="social-icons">
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+
+<a href="#">
+<i class="fab fa-pinterest"></i>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+<h3>
+Explore
+</h3>
+
+
+<a href="index.html">
+Home
+</a>
+
+<a href="shop.html">
+Shop
+</a>
+
+
+<a href="about.html">
+About
+</a>
+
+
+<a href="contact.html">
+Contact
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-links">
+
+
+<h3>
+Customer Care
+</h3>
+
+
+<a href="#">
+Shipping Policy
+</a>
+
+
+<a href="#">
+Privacy Policy
+</a>
+
+
+<a href="#">
+Returns
+</a>
+
+
+<a href="#">
+FAQ
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-newsletter">
+
+
+<h3>
+Stay Inspired
+</h3>
+
+
+<p>
+Subscribe for new fragrance launches and exclusive offers.
+</p>
+
+
+
+<div class="footer-input">
+
+
+<input type="email" placeholder="Your Email">
+
+
+<button>
+Join
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+© 2026 Veloura Perfumes. Crafted With Elegance.
+</p>
+
+
+</div>
+
+
+
+</footer>
+<script>
+
+function categoryPage(page){
+
+if(page !== ""){
+window.location.href = page;
+}
+
+}
+
+</script>
+</body>
+
+</html>
